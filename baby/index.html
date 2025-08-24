@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación Baby Shower</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="javascripts.js" defer></script>
+</head>
+<body>
+  <section class="invitacion">
+    <h1>🎀 ¡Bienvenidos al Baby Shower! 🎀</h1>
+    <p>Estamos muy emocionados de celebrar la llegada de nuestra pequeña.</p>
+    <p>Por favor, acompáñanos en este día tan especial.</p>
+    <div class="contador"></div>
+
+<!-- Formulario de asistencia -->
+<form name="asistencia" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="gracias.html">
+  <input type="hidden" name="form-name" value="asistencia" />
+  <p class="hidden">
+    <label>No llenar si eres humano: <input name="bot-field" /></label>
+  </p>
+
+  <input type="text" name="nombre" placeholder="Tu nombre" required />
+  <button type="submit">Confirmar asistencia</button>
+</form>
+  </section>
+</body>
+</html>
